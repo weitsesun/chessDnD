@@ -1,7 +1,16 @@
 .App {
-  text-align: center;
+  text-align: left;
+  font-weight: 700;
+  width: 50%;
+  height: 50%;
+  margin: auto;
 }
-
+#root {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+/* 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -30,4 +39,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

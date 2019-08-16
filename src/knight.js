@@ -1,10 +1,7 @@
 import React from 'react';
 
-export default class Knight extends React.Component {
-  
-  render() {
+export default function Knight() {
     return (
       <span>♘</span>
     )
-  }
 }
