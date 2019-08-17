@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function Knight() {
     return (
-      <span>♘</span>
+      <span style={{fontSize: '50px'}}>♘</span>
     )
 }
