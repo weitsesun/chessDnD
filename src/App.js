@@ -5,9 +5,9 @@ import Square from './square';
 
 function App() {
   return (
-    <div className="App">
+    <div className="Square">
       <Square black>
-        <Knight />
+        <Knight knightPosition = {[0, 0]}/>
       </Square>
     </div>
   );
