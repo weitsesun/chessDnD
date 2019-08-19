@@ -7,7 +7,9 @@ import { observe } from './Game';
 
 import Board from './Board';
 
+const root = document.getElementById('root');
+
 // ReactDOM.render(<Board knightPosition = {[1, 0]}/>, document.getElementById('root'));
-observe(knightPosition => ReactDOM.render(<Board knightPosition = {knightPosition}/>, document.getElementById('root')));
+observe(knightPosition => ReactDOM.render(<Board knightPosition = {knightPosition}/>, root));
 
 serviceWorker.unregister();

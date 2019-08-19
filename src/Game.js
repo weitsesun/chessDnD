@@ -1,5 +1,5 @@
 
-export function observe(receive) {
+export function observe(receiveFunction) {
   const rand = () => Math.floor(Math.random() * 8);
-  setInterval(() => receive([rand(), rand()]), 500);
+  setInterval(() => receiveFunction([rand(), rand()]), 500);
 }
