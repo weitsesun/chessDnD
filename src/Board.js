@@ -3,6 +3,9 @@ import Square from './square';
 import Knight from './knight';
 import { canMoveKnight, moveKnight } from './Game'
 
+import { DndProvider } from 'react-dnd';
+import HTML5Backend from 'react-dnd-html5-backend';
+
 export default function Board({knightPosition}) {
 
   const squares = [];
