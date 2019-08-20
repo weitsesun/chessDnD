@@ -6,7 +6,7 @@ import { canMoveKnight, moveKnight } from './Game'
 import { DndProvider } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 
-export default function Board({knightPosition}) {
+function Board({knightPosition}) {
 
   const squares = [];
 
@@ -36,9 +36,11 @@ function renderSquare(i, [knightX, knightY]) {
   const piece = isKnightHere ? <Knight /> : null;
 
   return (
+    <DndProvider backend={HTML5Backend}>
     <div onClick={() => handleSquareClick(x, y)} key = {i} style={{width: '12.5%', height: '12.5%'}}>
       <Square black = { black }>{piece}</Square>
     </div>
+    </DndProvider>
   )
 }
 
@@ -47,3 +49,5 @@ function handleSquareClick(toX, toY) {
     moveKnight(toX, toY);
   }
 }
+
+export default Board;
